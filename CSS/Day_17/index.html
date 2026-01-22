@@ -2,11 +2,84 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=
-    , initial-scale=1.0">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <style>
+
+        /* Element Selector */
+        div{
+            color: red;
+            background-color: yellow;
+        }
+
+        /* Class Selector */
+        .blue{
+            color: red;
+            background-color:blue;
+        }
+
+        /* Id Selector */
+        #green{
+            color: red;
+            background-color: green;
+        }
+
+        /* Child Selector */
+        div > p {
+            color: red;
+            background-color: rgb(37, 137, 237);
+        }
+
+        /* Descendent Selector */
+        div p{
+            color: red;
+            background-color: chartreuse;
+        }
+
+        /* universal Selector */
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Pseudo Selector */
+        a:link{
+            color: aqua;
+        }
+        
+         a:active{                   /*When we click on the link */
+            color: yellow;
+        }
+
+        a:hover{
+            color:red;            /*When we over the link*/
+        }
+
+        a:visited{
+            color: green;
+        }
+
+    </style>
 </head>
 <body>
+
+    <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione fugiat explicabo perspiciatis?
+    </div>
+
+    <div class="blue">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione fugiat explicabo perspiciatis?
+    </div>
     
+    <div id="green">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione fugiat explicabo perspiciatis?
+    </div>
+    
+    <div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, sint. Suscipit quisquam distinctio porro praesentium voluptatem fugit, adipisci deserunt culpa?</p>
+    </div>
+    
+    <a href="https://youtube.com">Google</a>
+
 </body>
 </html>

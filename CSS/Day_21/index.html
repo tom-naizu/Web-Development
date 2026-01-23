@@ -1,12 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=
-    , initial-scale=1.0">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Specificity</title>
+    <style>
+        
+        /* Inline Selector > Class or Attribute Selector > Element Selector > Universal Selector */
+
+        /* The Specifity of this selector is 1 */
+        h1 {
+            color: aqua;
+        }
+
+        /*This is the example of Attribute Selector. The Specifity is 10*/
+        [data-x=a]{                          
+            background-color: red;
+        }
+
+        /* When we have same type of selctor on that instant all the selector have same proprity.Now you just writre up as per the Position Prefrences then it will overwirte on one another from at the end form*/
+
+        /* The Specifity of this selector is 10 + 1 = 11 */
+        h1.yellow {
+            color: yellow;                           /*Appeare at first*/
+        }
+
+        /* The Specifity of this selector is 10*/
+        .cred {
+            color: red;                              /*Overwrite on First*/
+        }
+
+        /* The Specifity of this selector is 10*/
+        .cpurple {
+            color: purple;                           /*Overwrite on Second */
+        }
+
+        /* The Specifity of this selector is 1 + 10 + 10 + 10  + 10 = 41 */
+        a.harryclass.rohan-class[href]:hover{               /*hover  psuedo class*/
+            color: blueviolet;
+        }
+
+    </style>
 </head>
+
 <body>
-    
+    <h1 class="yellow cred cpurple" data-x="a">CSS Specificity</h1>
 </body>
 </html>

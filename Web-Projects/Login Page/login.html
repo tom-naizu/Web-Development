@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bharat - Your Financial Health Companion</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Home Page -->
+    <div class="home-page" id="homePage">
+        <!-- Navigation -->
+        <nav>
+            <div class="nav-container">
+                <div class="logo">🇮🇳 Bharat</div>
+                <div class="nav-links">
+                    <a href="#features">Features</a>
+                    <a href="#how-it-works">How It Works</a>
+                    <a href="#about">About</a>
+                    <button class="login-btn" onclick="showLogin()">Login</button>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Your Portfolio's Medical Report</h1>
+                <p>Simple Hinglish updates for Indian retail investors. Understand your stocks, manage risk, and stay informed—without the complexity.</p>
+                <button class="cta-btn" onclick="showLogin()">Get Started Free</button>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section class="features" id="features">
+            <div class="features-container">
+                <h2>Why Choose Bharat?</h2>
+                <div class="feature-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">📊</div>
+                        <h3>Portfolio Doctor</h3>
+                        <p>Upload your bank or demat statement and get an instant Portfolio Health Score. Know exactly how healthy your investments are.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">⚠️</div>
+                        <h3>Risk Checks</h3>
+                        <p>Automatically identify concentration risks, duplicates across funds, and basic risk signals in your portfolio.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">📰</div>
+                        <h3>Personalized News</h3>
+                        <p>Track only YOUR holdings. Get short Hinglish summaries of news that actually matters to your stocks—in real time.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🛡️</div>
+                        <h3>Safe by Design</h3>
+                        <p>We provide intelligence and insights, not buy/sell advice. Make informed decisions on your own terms.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🗣️</div>
+                        <h3>Simple Hinglish</h3>
+                        <p>No complex jargon. Everything explained in simple Hinglish that Tier-2 city investors can easily understand.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🎯</div>
+                        <h3>For Indian Investors</h3>
+                        <p>Built specifically for Indian retail investors who want to understand their money better.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- How It Works -->
+        <section class="how-it-works" id="how-it-works">
+            <h2>How It Works</h2>
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3>Upload Statement</h3>
+                    <p>Upload your bank or demat PDF statement securely</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3>Get Health Score</h3>
+                    <p>Receive your Portfolio Health Score with clear explanations</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3>Track & Learn</h3>
+                    <p>Get personalized Hinglish updates about your stocks</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <h3>Stay Informed</h3>
+                    <p>Receive real-time alerts on news affecting your holdings</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <p>&copy; 2024 Bharat Financial Intelligence Layer. Built for Indian Investors. 🇮🇳</p>
+        </footer>
+    </div>
+
+    <!-- Login Page -->
+    <div class="login-page" id="loginPage">
+        <div class="login-container">
+            <div class="login-header">
+                <span class="login-icon">🇮🇳</span>
+                <h2>Welcome Back!</h2>
+                <p class="login-subtitle">Login to access your portfolio insights</p>
+            </div>
+            
+            <form onsubmit="handleLogin(event)">
+                <div class="form-group">
+                    <label for="email">Email or Phone</label>
+                    <div class="input-wrapper">
+                        <span class="input-icon">📧</span>
+                        <input type="text" id="email" placeholder="Enter your email or phone" required>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <div class="input-wrapper">
+                        <span class="input-icon">🔒</span>
+                        <input type="password" id="password" placeholder="Enter your password" required>
+                        <button type="button" class="password-toggle" onclick="togglePassword()">👁️</button>
+                    </div>
+                </div>
+                
+                <div class="remember-forgot">
+                    <div class="remember-me">
+                        <input type="checkbox" id="remember">
+                        <label for="remember">Remember me</label>
+                    </div>
+                    <a href="#" class="forgot-link">Forgot Password?</a>
+                </div>
+                
+                <button type="submit" class="submit-btn">Login</button>
+                
+                <div class="divider">
+                    <span>OR</span>
+                </div>
+                
+                <div class="social-login">
+                    <button type="button" class="social-btn" onclick="alert('Google login coming soon!')">
+                        <span>🔍</span> Google
+                    </button>
+                    <button type="button" class="social-btn" onclick="alert('Phone login coming soon!')">
+                        <span>📱</span> Phone
+                    </button>
+                </div>
+                
+                <div class="signup-link">
+                    Don't have an account?
+                    <a href="#">Sign Up Free</a>
+                </div>
+                
+                <div class="back-link">
+                    <a href="#" onclick="showHome()">
+                        <span>←</span> Back to Home
+                    </a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

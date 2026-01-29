@@ -2,11 +2,29 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=
-    , initial-scale=1.0">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shadow And Outline</title>
+    <style>
+        *{
+            margin: 100px;
+        }
+        
+        .box{
+            border: 2px solid black;
+            padding: 34px;
+            box-shadow: 5px 5px 15px 5px red;
+        }
+        p{
+            text-shadow: -1px 1px 2px red;
+            border: 2px solid yellow;
+            border-radius: 40px;
+            outline: 5px solid red;
+            outline-offset: 30px;
+        }
+    </style>
 </head>
 <body>
-    
+    <div class="box">I am a Box</div>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae, quod qui, accusantium magni unde, fugit quibusdam numquam quas quisquam eius explicabo labore architecto!</p>
 </body>
 </html>

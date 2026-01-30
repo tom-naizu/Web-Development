@@ -2,11 +2,60 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=
-    , initial-scale=1.0">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on CSS Selectors</title>
+    <style>
+        box:first-child{
+            background-color: aquamarine;
+        }
+        /* .box::first-line{
+            color: red;
+        } */
+        .boxes *{
+            color: blue;
+            border: 2px solid black;
+        }
+        /* p, a, .box, [data-color="primary"]{
+            margin: 20px;
+            padding-top: 45px;
+        } */
+
+        /* .box:nth-child(even){
+            background-color: red;
+        } */
+        /* .box:nth-child(even){
+            background-color: red;
+        } */
+         /* .box:nth-last-child(1){
+            background-color: blue;
+         } */
+        .box::first-letter{
+            color: coral;
+            font-size: 45px;
+        }
+        .boxes::before{
+            content:"Tom Naizu is here";
+            color: red;
+        } 
+        .boxes::after{
+            content:"Tom Naizu is not here";
+            color:green;
+        }
+        ::selection{
+            color: red;
+            background-color: aqua;
+        }
+        input::placeholder{
+            color: rgb(56, 73, 73);
+        }
+    </style>
 </head>
 <body>
-    
+    <div class="boxes">
+        <div data-color="primary"  class="box">hey i am the first Box.</div>
+        <div class="box">hey i am the second Box</div>
+        <div class="box">hey i am the third Box</div>
+        <div><input type="text" placeholder="Type your name here:"></div>
+        </div>
 </body>
 </html>

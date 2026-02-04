@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bounce Animation</title>
+    <style>
+        .container{
+            width: 80vw;
+            height: 75vh;
+            background-color:teal;
+            position: relative;
+        }
+        .Ball{
+            width: 80px;
+            height: 80px;
+            border-radius: 100%;
+            background-color: red;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            animation: tom-X 3s linear infinite, tom-Y 1s ease-out infinite alternate ;
+        }
+
+        @keyframes tom-X {
+            from{
+                left: 0;
+            }
+            to{
+                left: 100%;
+            }
+        }
+        @keyframes tom-Y {
+            from{
+                bottom: 0;
+            }
+            to{
+                bottom: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="Ball"></div>
+    </div>
+</body>
+</html>

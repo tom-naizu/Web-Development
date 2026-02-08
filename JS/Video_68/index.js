@@ -9,10 +9,10 @@ console.log("#...Tom Naizu...#")
 // boxes[2].style.backgroundColor = "green"    
 
 // document.getElementById("redbox").style.backgroundColor = "yellow"
+// document.getElementsByTagName("div")
 // document.querySelector(".box").style.backgroundColor = "red"
 
 document.querySelectorAll('.box').forEach(e => {
     e.style.backgroundColor = "red";
 });
 console.log(document.querySelectorAll)
-

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="box" style="display: flex;" data-createdby="Tom Naizu" data-conceptby="rohan">
+            Hey I am a am box
+        </div>
+        <div class="box">
+            Hey I am a am box
+        </div>
+        <script>
+            // let div = document.createElement("div");
+            // div.innerHTML ="Hey <b>Tom</b> is Here..."
+            // div.setAttribute("class" ,"Created");
+            // document.querySelector(".container").append(div);
+            let div  = document.querySelector(".container");
+            div.insertAdjacentElement("afterbegin","<b>Heyyy Here is your Tom Naizu...</b>")
+        </script>
+    </div>
+</body>
+</html> 
